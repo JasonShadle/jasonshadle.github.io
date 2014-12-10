@@ -1,0 +1,43 @@
+body {
+     background-color: purple; 
+    /* background-image: url("assets\\background\\pitou.jpeg"); */
+    background-repeat: no-repeat;
+    /*background-attachment: scroll;*/
+    /*background-size: 1920px 1080px;*/
+}
+div {
+	width: 150px;
+	height: 150px;
+	overflow: scroll;
+}
+div1 { /* Bottom Scroll */	
+	position: fixed;
+top: 150px;
+left: 700px;
+}
+div2 {
+	position: fixed;
+	left:700px;
+	top:20px;
+}
+div3 { /* Menu Navigation */
+	position:fixed;
+	/*left:-120px;*/
+	top:-25px;
+	width: 100%;
+	font-size: 12px;
+}
+h2 {
+	left: 10px;
+}
+body2 {
+	left: 50px;
+}
+.image_file {
+	position:absolute;
+	display:none;
+}
+/*h1 {
+    color: navy;
+    margin-left: 20px;
+}*/
