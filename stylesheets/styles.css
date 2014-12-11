@@ -93,7 +93,7 @@ div3 { /* Menu Navigation */
 }
 #nav li:hover ul{ /* Display the dropdown on hover */
 	left: 0;
-	top: 3px;
+	top: 20px;
 }
 /* Background Color && Persistant State */
 #nav li:hover a{
