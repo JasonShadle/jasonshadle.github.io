@@ -43,7 +43,10 @@ div3 { /* Menu Navigation */
 }
 
 /* Navigation */
-
+#navbar {
+	margin: auto;
+	overflow: visible;
+}
 #navbar ul {
   text-align: left;
   display: inline;
