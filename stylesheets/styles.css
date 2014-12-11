@@ -38,7 +38,7 @@ body2 {
 	display:none;
 }
 
-ul {
+ul1 {
   text-align: left;
   display: inline;
   margin: 0;
@@ -48,7 +48,7 @@ ul {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
-ul li {
+ul1 li1 {
   font: bold 12px/18px sans-serif;
   display: inline-block;
   margin-right: -4px;
@@ -62,11 +62,11 @@ ul li {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-ul li:hover {
+ul1 li1:hover {
   background: #555;
   color: #fff;
 }
-ul li ul {
+ul1 li1 ul1 {
   padding: 0;
   position: absolute;
   top: 48px;
@@ -84,14 +84,14 @@ ul li ul {
   -o-transition: opacity 0.2s;
   -transition: opacity 0.2s;
 }
-ul li ul li { 
+ul1 li1 ul1 li1 { 
   background: #555; 
   display: block; 
   color: #fff;
   text-shadow: 0 -1px 0 #000;
 }
-ul li ul li:hover { background: #666; }
-ul li:hover ul {
+ul1 li1 ul1 li1:hover { background: #666; }
+ul1 li1:hover ul1 {
   display: block;
   opacity: 1;
   visibility: visible;
