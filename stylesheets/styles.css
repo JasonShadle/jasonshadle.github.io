@@ -10,10 +10,11 @@ div {
 	height: 150px;
 	overflow: scroll;
 }
-.bottom_scroll { /* Bottom Scroll */	
+.bottom_scroll {
+	overflow: visible;	
 	position: fixed;
-top: 150px;
-left: 700px;
+	top: 150px;
+	left: 700px;
 }
 div2 {
 	position: fixed;
