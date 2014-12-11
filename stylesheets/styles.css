@@ -68,13 +68,11 @@ div3 { /* Menu Navigation */
 	display:block;
 	padding:5px;
 	color:#FFFFFF;
-	background:#00000;
 	text-decoration:none;
 }
 /* Text On Hover */
 #nav a:hover{
 	color:#FFFFFF;
-	background:#00000;
 	/*text-decoration:underline;*/
 }
 
@@ -95,7 +93,7 @@ div3 { /* Menu Navigation */
 }
 #nav li:hover ul{ /* Display the dropdown on hover */
 	left: 0;
-	top: .5px;
+	top: 3px;
 }
 /* Background Color && Persistant State */
 #nav li:hover a{
@@ -106,7 +104,7 @@ div3 { /* Menu Navigation */
 	text-decoration:none;
 }
 #nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
-	background:#00000;
+	background:#33333;
 }
 
 
