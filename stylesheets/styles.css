@@ -10,6 +10,11 @@ div {
 	height: 150px;
 	overflow: scroll;
 }
+.nav_bar {
+	overflow: visible;
+	margin: auto;
+	position: fixed;
+}
 .bottom_scroll {
 	overflow: visible;	
 	position: fixed;
@@ -37,8 +42,9 @@ div3 { /* Menu Navigation */
 	display:none;
 }
 
+/* Navigation */
 
-ul {
+#navbar ul {
   text-align: left;
   display: inline;
   margin: 0;
@@ -48,7 +54,7 @@ ul {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
-ul li {
+#navbar ul li {
   font: bold 12px/18px sans-serif;
   display: inline-block;
   margin-right: -4px;
@@ -62,11 +68,11 @@ ul li {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-ul li:hover {
+#navbar ul li:hover {
   background: #555;
   color: #fff;
 }
-ul li ul {
+#navbar ul li ul {
   padding: 0;
   position: absolute;
   top: 48px;
@@ -84,20 +90,20 @@ ul li ul {
   -o-transition: opacity 0.2s;
   -transition: opacity 0.2s;
 }
-ul li ul li { 
+#navbar ul li ul li { 
   background: #555; 
   display: block; 
   color: #fff;
   text-shadow: 0 -1px 0 #000;
 }
-ul li ul li:hover { background: #666; }
-ul li:hover ul {
+#navbar ul li ul li:hover { background: #666; }
+#navbar ul li:hover ul {
   display: block;
   opacity: 1;
   visibility: visible;
 }
 
-ul {
+#navbar ul {
   text-align: left;
   display: inline;
   margin: 0;
@@ -107,7 +113,7 @@ ul {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
-ul li {
+#navbar ul li {
   font: bold 12px/18px sans-serif;
   display: inline-block;
   margin-right: -4px;
@@ -121,11 +127,11 @@ ul li {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-ul li:hover {
+#navbar ul li:hover {
   background: #555;
   color: #fff;
 }
-ul li ul {
+#navbar ul li ul {
   padding: 0;
   position: absolute;
   top: 48px;
@@ -143,14 +149,14 @@ ul li ul {
   -o-transition: opacity 0.2s;
   -transition: opacity 0.2s;
 }
-ul li ul li { 
+#navbar ul li ul li { 
   background: #555; 
   display: block; 
   color: #fff;
   text-shadow: 0 -1px 0 #000;
 }
-ul li ul li:hover { background: #666; }
-ul li:hover ul {
+#navbar ul li ul li:hover { background: #666; }
+#navbar ul li:hover ul {
   display: block;
   opacity: 1;
   visibility: visible;
