@@ -81,7 +81,7 @@ div3 { /* Menu Navigation */
 	background:#df66ff;
 	list-style:none;
 	position:absolute;
-	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+	left: 0px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
 	/*display: none;*/
 }
 #nav ul li{
