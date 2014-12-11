@@ -94,19 +94,19 @@ div3 { /* Menu Navigation */
 	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
 }
 #nav li:hover ul{ /* Display the dropdown on hover */
-	left:0;
-	top: -5px;
+	left: 0;
+	top: 0;
 }
 /* Background Color && Persistant State */
 #nav li:hover a{
-	background:#FFFFFF;
+	background:#df66ff;
 	/*text-decoration:underline;*/
 }
-#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+#nav li:hover ul a { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
 	text-decoration:none;
 }
 #nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
-	background:#FFFFFF;
+	background:#00000;
 }
 
 
