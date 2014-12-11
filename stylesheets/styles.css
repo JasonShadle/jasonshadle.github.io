@@ -12,7 +12,6 @@ div {
 }
 .nav_bar {
 	overflow: visible;
-	margin: auto;
 	position: fixed;
 }
 .bottom_scroll {
