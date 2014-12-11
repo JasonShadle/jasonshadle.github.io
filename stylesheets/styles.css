@@ -12,8 +12,6 @@ div {
 }
 .bottom_scroll {
 	overflow: visible;	
-	position: fixed;
-	display: inline;
 	top: 150px;
 	left: 700px;
 }
