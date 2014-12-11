@@ -52,7 +52,7 @@ div3 { /* Menu Navigation */
 	margin-bottom:10px;
 	/* Clear floats */
 	float:left;
-	width:100%;
+	/*width:100%;*/
 	/* Bring the nav above everything else--uncomment if needed.
 	position:relative;
 	z-index:5;
@@ -93,7 +93,7 @@ div3 { /* Menu Navigation */
 }
 #nav li:hover ul{ /* Display the dropdown on hover */
 	left: 0;
-	top: 15px;
+	top: 10px;
 }
 /* Background Color && Persistant State */
 #nav li:hover a{
