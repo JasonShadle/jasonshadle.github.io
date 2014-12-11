@@ -37,7 +37,28 @@ body2 {
 	position:absolute;
 	display:none;
 }
-/*h1 {
-    color: navy;
-    margin-left: 20px;
-}*/
+nav ul ul {
+	display:none;
+}
+nav ul li: hover > ul {
+	display:block;
+}
+.nav ul {
+	padding: 20px;
+	border-radius: 10px
+	position: relative;
+	display: inline-block;
+}
+.nav ul li:hover{
+	background: #4b545f;
+	background: linear-gradient(top, #4f5964 0#, #5f6975 404);
+	background: -moz linear-gradient (top, #4f5964 04, #5f6975 404);
+	background: -webkit-linear-gradient(top, #4f5694 04, #5f6975 404);
+
+}
+.nav ul li:hover > ul {margin: 0px; padding: 0px }
+.nav ul li:hover > ul li { float:none; display:block;}
+.nav ul li:hover > ul li a { color: #666; min-width:150px }
+.nav ul li:hover > ul li a: hover { color: #fff;} 
+.nav ul li {position:relative;}
+.nav ul li ul { position:absolute; top:30px; left: 0px}
