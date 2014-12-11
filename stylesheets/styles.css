@@ -15,7 +15,8 @@ div {
 	position: fixed;
 	height: 100%;
 	width: 100%;
-	
+	margin: auto;
+
 }
 .bottom_scroll {
 	overflow: visible;	
