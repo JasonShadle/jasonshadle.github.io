@@ -60,7 +60,7 @@ div3 { /* Menu Navigation */
 }
 #nav li{
 	float:left;
-	margin-right:10px;
+	margin-right:0px;
 	position:relative;
 }
 /* Text Without Hover */
@@ -93,7 +93,7 @@ div3 { /* Menu Navigation */
 }
 #nav li:hover ul{ /* Display the dropdown on hover */
 	left: 0;
-	top: 20px;
+	top: 15px;
 }
 /* Background Color && Persistant State */
 #nav li:hover a{
