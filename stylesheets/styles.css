@@ -45,7 +45,7 @@ div3 { /* Menu Navigation */
 }
 
 nav {
-	margin: -30px auto; 
+	margin: -35px auto; 
 	text-align: center;
 }
 
@@ -56,10 +56,18 @@ nav ul ul {
 	nav ul li:hover > ul {
 		display: block;
 	}
+/*
 
+a = text,
+li = background,
+ul = ??.
+
+*/
 
 nav ul {	
-    width: 100%;
+  /* Moves White Bar Up/Down */
+  /* top: 100px; */
+  width: 100%;
 	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
 	background: #fff;
 	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
@@ -68,11 +76,25 @@ nav ul {
 	position: relative;
 	display: inline-table;
 }
+/*
+
+==========================
+= Text in Navigation Bar =
+==========================
+
+*/
+nav a {
+  margin: -10px 0 0 0;
+}
 	nav ul:after {
 		content: ""; clear: both; display: block;
+  
 	}
 
 	nav ul li {
+	  
+	  /* White Background */
+	  height: 35px;
 		float: left;
 	}
 		nav ul li:hover {
@@ -84,6 +106,7 @@ nav ul {
 			}
 		
 		nav ul li a {
+		  
 			display: block; padding: 25px 40px;
 			color: #757575; text-decoration: none;
 		}
