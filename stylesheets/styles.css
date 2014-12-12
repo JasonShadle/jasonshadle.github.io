@@ -97,7 +97,8 @@ nav ul {
 		nav ul ul li {
 			float: none; 
 			/* border-top: 1px solid #FF00FF; */
-			border-bottom: 1px solid #FF00FF; position: relative;
+			/* border-bottom: 1px solid #FF00FF; */
+			position: relative; 
 		}
 			nav ul ul li a {
 				padding: 15px 40px;
