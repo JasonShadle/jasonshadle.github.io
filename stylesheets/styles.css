@@ -109,6 +109,7 @@ nav ul {
 				}
 		
 	nav ul ul ul {
+	  width: 100%;
 		position: absolute; left: 100%; top:0;
 	}
 		
