@@ -58,7 +58,8 @@ nav ul ul {
 	}
 
 
-nav ul {
+nav ul {	
+    width: 100%;
 	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
 	background: #fff;
 	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
