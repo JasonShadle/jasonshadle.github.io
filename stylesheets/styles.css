@@ -34,7 +34,6 @@ div2 {
 }
 div3 { /* Menu Navigation */
 	position:fixed;
-	/*left:-120px;*/
 	top:-25px;
 	width: 100%;
 	font-size: 12px;
@@ -45,36 +44,24 @@ div3 { /* Menu Navigation */
 	display:none;
 }
 
-
 #nav{
 	list-style:none;
-	/*font-weight:bold;*/
 	margin-bottom:10px;
-	/* Clear floats */
 	float:left;
-	/*width:100%;*/
-	/* Bring the nav above everything else--uncomment if needed.
-	position:relative;
-	z-index:5;
-	*/
 }
 #nav li{
 	float:left;
 	position:relative;
   
 }
-/* Text Without Hover */
 #nav a {
 	display:block;
 	padding:5px;
 	color:#FFFFFF;
 	text-decoration:none;
 }
-/* Text On Hover */
-#nav a:hover{
-  
+#nav a:hover{  
 	color:#FFFFFF;
-	/*text-decoration:underline;*/
 }
 
 /*--- DROPDOWN ---*/
@@ -83,7 +70,6 @@ div3 { /* Menu Navigation */
 	list-style:none;
 	position:absolute;
 	display: none;
-
 }
 #nav ul li{
 	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
@@ -92,10 +78,9 @@ div3 { /* Menu Navigation */
   left: -10px;
 	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
 }
-#nav li:hover ul{ /* Display the dropdown on hover */
-  
+#nav li:hover ul{  
   display: inline-block;
-	top: 68px;
+  top: 10px;
 }
 /* Background Color && Persistant State */
 #nav li:hover a{
