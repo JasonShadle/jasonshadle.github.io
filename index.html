@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="stylesheets\styles.css">
+	<link rel="stylesheet" href="pure\pure-min.css">
+  <title>Kitty's Wardrobe</title>
+</head>
+
+<body>
+<!-- <p>Here's another glacier in New Zealand: <a href="http://www.travel-explorer.com/fox-glacier-new-zealand/" target="_blank">Fox Glacier</a></p> -->
+<!-- <input type="submit" id="submit_button" name="submit_button"/> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Navigation Bar -->
+<nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Archeage</a>
+			<ul>
+				<li><a href="#">Items</a>
+					<ul>				
+						<li><a href="#">Costumes</a>						</li>
+				</li>
+					</ul>
+				<li><a href="#">*</a></li>
+				<li><a href="#">*</a>
+					<ul>
+						<li><a href="#">*</a></li>
+						<li><a href="#">*</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li><a href="#">*</a>
+			<ul>
+				<li><a href="#">*</a></li>
+				<li><a href="#">*</a></li>
+			</ul>
+		</li>
+		<li><a href="#">*</a></li>
+	</ul>
+</nav>
+
+<!-- Scroll Menu -->
+<div class="bottom_scroll">
+	<ul class="pure-paginator">
+
+    <li><a class="pure-button prev" href="#" id="pure_button_prev">&#171;</a></li>
+    <li><a class="pure-button" href="#" id="pure_button1">1</a></li>
+    <li><a class="pure-button" href="#" id="pure_button2">2</a></li>
+    <li><a class="pure-button" href="#" id="pure_button3">3</a></li>
+    <li><a class="pure-button" href="#" id="pure_button4">4</a></li>
+    <li><a class="pure-button" href="#" id="pure_button5">5</a></li>
+    <li><a class="pure-button next" href="#" id="pure_button_next">&#187;</a></li>
+</ul>
+</div1>
+
+<!-- <div2><img class="image_file" id="imgfile" height = "800" width = "600"></div2> -->
+
+
+<!-- End Scroll Menu -->
+<!-- Scripts -->
+<script>
+var constants = {
+	'MAX_PICTURES' : '3',
+};
+var PB = ['#pure_button1', '#pure_button2','#pure_button3','#pure_button4','#pure_button5']
+var pictureNumber = 1;
+var lastButton='#pure_button1';
+$(document).ready(function(){
+
+  $('#pure_button1').click(function(){
+    showImage(1);
+    pictureNumber = 1;
+    $(lastButton).attr('class', "pure-button"); 
+    $('#pure_button1').attr('class', "pure-button pure-button-active");
+    lastButton='#pure_button1';
+
+  });  
+  $('#pure_button2').click(function(){ 
+  	showImage(2);
+  	pictureNumber = 2;
+    $(lastButton).attr('class', "pure-button");   
+    $('#pure_button2').attr('class', "pure-button pure-button-active");    
+    lastButton='#pure_button2';
+  });
+  $('#pure_button3').click(function(){ 
+    showImage(3);
+    pictureNumber = 3;
+    $(lastButton).attr('class', "pure-button");   
+    $('#pure_button3').attr('class', "pure-button pure-button-active");    
+    lastButton='#pure_button3';
+  });
+  $('#pure_button_next').click(function(){
+  	if (pictureNumber == constants.MAX_PICTURES) {
+  		// Nothing
+  	}
+  	else {
+  	pictureNumber++;  	
+  	showImage(pictureNumber);
+    var nextButton = PB[pictureNumber-1]; 
+    $(lastButton).attr('class', "pure-button"); // Previous Button      
+    $(nextButton).attr('class', "pure-button pure-button-active"); // Next Button
+    lastButton=nextButton;
+  }
+  });  
+  $('#pure_button_prev').click(function(){
+  	if (pictureNumber == 1) {
+  		// Nothing
+  	}
+  	else {
+  	pictureNumber--;
+  	showImage(pictureNumber);    
+    var nextButton = PB[pictureNumber-1]; 
+    $(lastButton).attr('class', "pure-button"); // Previous Button      
+    $(nextButton).attr('class', "pure-button pure-button-active"); // Next Button
+    lastButton=nextButton;
+  
+  }
+  });
+});
+<!-- Functions -->
+function showImage(picNum) {
+	var picturePath = "assets\\background\\image" + picNum + ".png";
+	$('#imgfile').attr("src", picturePath); 
+	$('#imgfile').show()
+}
+</script>
+</body>
+</html>
