@@ -43,3 +43,110 @@ div3 { /* Menu Navigation */
 	position:absolute;
 	display:none;
 }
+
+nav {
+	margin: -35px auto; 
+	text-align: center;
+}
+
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		display: block;
+	}
+/*
+
+a = text,
+li = background,
+ul = ??.
+
+*/
+
+nav ul {	
+  /* Moves White Bar Up/Down */
+  /* top: 100px; */
+  	width: 100%;
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: #fff;
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0;   
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+/*
+
+==========================
+= Text in Navigation Bar =
+==========================
+
+*/
+nav a {
+  margin: -5px 0 0 0;
+  font-size: 75%;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+  
+	}
+
+	nav ul li {
+	  
+	  /* Navigation White Background */
+	  height: 35px;
+	  float: left;
+	}
+		nav ul li:hover {
+			/* Hover Over Color After Defocusing */
+			/*background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 0%);*/
+			/*background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 0%);*/
+			/*background: #757575;*/
+		}
+			nav ul li:hover a {
+				/* Text Color On Hover */				
+				color: #00000;
+			}
+		
+		nav ul li a {
+			/* Navigation Bar Text Properties */
+			height: 95%;	  
+			display: block; padding: 25px 40px;
+			color: #757575; text-decoration: none;
+		}
+			
+		
+	nav ul ul {
+		/* First Menu Background, Pink */
+		width: 10%;
+		background: #FF00FF; border-radius: 0px; padding: 0;
+		position: absolute; top: 60%;
+	}
+	nav ul ul li:hover {
+		color:#fff;
+	}
+		nav ul ul li {
+			float: none; /*Floats elements to the side of the box.*/
+			height: 100%;
+			/* Spacing Between Elements */ 
+			/*margin: 1%;*/
+			/* border-top: 1px solid #FF00FF; */
+			/* border-bottom: 1px solid #FF00FF; */
+			position: relative; 
+		}
+			nav ul ul li a {
+				padding: 0;
+				color: #fff;
+			}	
+				nav ul ul li a:hover {
+					/* Background On Hover Over */
+					background: #4b545f;
+				}
+		
+	nav ul ul ul {
+		/* Size of Second Menu */
+	  width: 100%;
+		position: absolute; left: 100%; top:0;
+	}
+		
