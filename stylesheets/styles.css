@@ -106,12 +106,12 @@ nav a {
 		}
 			nav ul li:hover a {
 				/* Text Color On Hover */				
-				color: #757575;
+				color: #00000;
 			}
 		
 		nav ul li a {
 			/* Navigation Bar Text Properties */
-			height: -20px;	  
+			height: 95%;	  
 			display: block; padding: 25px 40px;
 			color: #757575; text-decoration: none;
 		}
@@ -121,14 +121,14 @@ nav a {
 		/* First Menu Background, Pink */
 		width: 10%;
 		background: #FF00FF; border-radius: 0px; padding: 0;
-		position: absolute; top: 76%;
+		position: absolute; top: 60%;
 	}
 	nav ul ul li:hover {
 		color:#fff;
 	}
 		nav ul ul li {
-			float: none;
-			height: -100px;
+			float: none; /*Floats elements to the side of the box.*/
+			height: 100%;
 			/* Spacing Between Elements */ 
 			/*margin: 1%;*/
 			/* border-top: 1px solid #FF00FF; */
