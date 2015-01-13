@@ -14,8 +14,8 @@
 <!-- Navigation Bar -->
 <nav>
 	<ul>
-		<li><a href="wiki/index.php">Home</a></li>
-		<li><a href="wiki/index.php">Archeage</a>
+		<li><a href="wiki">Home</a></li>
+		<li><a href="wiki">Archeage</a>
 			<ul>
 				<li><a href="#">Items</a>
 					<ul>				
@@ -41,7 +41,7 @@
 	</ul>
 </nav>
 
-<!-- Scroll Menu -->
+<!-- Scroll Menu --><!-- 
 <div class="bottom_scroll">
 	<ul class="pure-paginator">
 
@@ -53,7 +53,7 @@
     <li><a class="pure-button" href="#" id="pure_button5">5</a></li>
     <li><a class="pure-button next" href="#" id="pure_button_next">&#187;</a></li>
 </ul>
-</div1>
+</div1> -->
 
 <!-- <div2><img class="image_file" id="imgfile" height = "800" width = "600"></div2> -->
 
@@ -61,70 +61,70 @@
 <!-- End Scroll Menu -->
 <!-- Scripts -->
 <script>
-var constants = {
-	'MAX_PICTURES' : '3',
-};
-var PB = ['#pure_button1', '#pure_button2','#pure_button3','#pure_button4','#pure_button5']
-var pictureNumber = 1;
-var lastButton='#pure_button1';
-$(document).ready(function(){
+// var constants = {
+// 	'MAX_PICTURES' : '3',
+// };
+// var PB = ['#pure_button1', '#pure_button2','#pure_button3','#pure_button4','#pure_button5']
+// var pictureNumber = 1;
+// var lastButton='#pure_button1';
+// $(document).ready(function(){
 
-  $('#pure_button1').click(function(){
-    showImage(1);
-    pictureNumber = 1;
-    $(lastButton).attr('class', "pure-button"); 
-    $('#pure_button1').attr('class', "pure-button pure-button-active");
-    lastButton='#pure_button1';
+//   $('#pure_button1').click(function(){
+//     showImage(1);
+//     pictureNumber = 1;
+//     $(lastButton).attr('class', "pure-button"); 
+//     $('#pure_button1').attr('class', "pure-button pure-button-active");
+//     lastButton='#pure_button1';
 
-  });  
-  $('#pure_button2').click(function(){ 
-  	showImage(2);
-  	pictureNumber = 2;
-    $(lastButton).attr('class', "pure-button");   
-    $('#pure_button2').attr('class', "pure-button pure-button-active");    
-    lastButton='#pure_button2';
-  });
-  $('#pure_button3').click(function(){ 
-    showImage(3);
-    pictureNumber = 3;
-    $(lastButton).attr('class', "pure-button");   
-    $('#pure_button3').attr('class', "pure-button pure-button-active");    
-    lastButton='#pure_button3';
-  });
-  $('#pure_button_next').click(function(){
-  	if (pictureNumber == constants.MAX_PICTURES) {
-  		// Nothing
-  	}
-  	else {
-  	pictureNumber++;  	
-  	showImage(pictureNumber);
-    var nextButton = PB[pictureNumber-1]; 
-    $(lastButton).attr('class', "pure-button"); // Previous Button      
-    $(nextButton).attr('class', "pure-button pure-button-active"); // Next Button
-    lastButton=nextButton;
-  }
-  });  
-  $('#pure_button_prev').click(function(){
-  	if (pictureNumber == 1) {
-  		// Nothing
-  	}
-  	else {
-  	pictureNumber--;
-  	showImage(pictureNumber);    
-    var nextButton = PB[pictureNumber-1]; 
-    $(lastButton).attr('class', "pure-button"); // Previous Button      
-    $(nextButton).attr('class', "pure-button pure-button-active"); // Next Button
-    lastButton=nextButton;
+//   });  
+//   $('#pure_button2').click(function(){ 
+//   	showImage(2);
+//   	pictureNumber = 2;
+//     $(lastButton).attr('class', "pure-button");   
+//     $('#pure_button2').attr('class', "pure-button pure-button-active");    
+//     lastButton='#pure_button2';
+//   });
+//   $('#pure_button3').click(function(){ 
+//     showImage(3);
+//     pictureNumber = 3;
+//     $(lastButton).attr('class', "pure-button");   
+//     $('#pure_button3').attr('class', "pure-button pure-button-active");    
+//     lastButton='#pure_button3';
+//   });
+//   $('#pure_button_next').click(function(){
+//   	if (pictureNumber == constants.MAX_PICTURES) {
+//   		// Nothing
+//   	}
+//   	else {
+//   	pictureNumber++;  	
+//   	showImage(pictureNumber);
+//     var nextButton = PB[pictureNumber-1]; 
+//     $(lastButton).attr('class', "pure-button"); // Previous Button      
+//     $(nextButton).attr('class', "pure-button pure-button-active"); // Next Button
+//     lastButton=nextButton;
+//   }
+//   });  
+//   $('#pure_button_prev').click(function(){
+//   	if (pictureNumber == 1) {
+//   		// Nothing
+//   	}
+//   	else {
+//   	pictureNumber--;
+//   	showImage(pictureNumber);    
+//     var nextButton = PB[pictureNumber-1]; 
+//     $(lastButton).attr('class', "pure-button"); // Previous Button      
+//     $(nextButton).attr('class', "pure-button pure-button-active"); // Next Button
+//     lastButton=nextButton;
   
-  }
-  });
-});
-<!-- Functions -->
-function showImage(picNum) {
-	var picturePath = "assets\\background\\image" + picNum + ".png";
-	$('#imgfile').attr("src", picturePath); 
-	$('#imgfile').show()
-}
-</script>
+//   }
+//   });
+// });
+// <!-- Functions -->
+// function showImage(picNum) {
+// 	var picturePath = "assets\\background\\image" + picNum + ".png";
+// 	$('#imgfile').attr("src", picturePath); 
+// 	$('#imgfile').show()
+// }
+// </script>
 </body>
 </html>
