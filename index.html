@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Google Analytics Tracking -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66080034-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 <head>
-	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,18 +20,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Jason Shadle</title>
+    <title>Modern Business - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/modern-business.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,89 +40,252 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-      <ul class="nav navbar-nav">
-        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-        <li class="hidden"> <a href="#page-top"></a> </li>
-        <li> <a class="page-scroll" href="#about">About</a> </li>
-        <li> <a class="page-scroll" href="#contact">Contact</a> </li>
-      </ul>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-</div>
-
+                <a class="navbar-brand" href="index.html">Jason Shadle</a>
+            </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse"> </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Blog Home 1</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Blog Home 2</a>
+                            </li>
+                            <li>
+                                <a href="blog-post.html">Blog Post</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Full Width Page</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="404.html">404</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                      <h1 class="brand-heading">HELLO.</h1>
-                      <p class="intro-text">Welcome to Jason Shadle's Homepage, even though there isn't much here.</p>
-                      <a class="twitter-timeline" href="https://twitter.com/akajasonshadle" data-widget-id="628072990123655168">Tweets by @akajasonshadle</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<a href="#about" class="btn btn-circle page-scroll">
-                <i class="fa fa-angle-double-down animated"></i>
-            </a>
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+              <h1 class="page-header"> Welcome to Jason's Websites!</h1>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4><em class="fa fa-fw fa-envelope"></em> Easy to Communicate</h4>
+                    </div>
+                    <div class="panel-body">
+                      <p>Able to communicate and plan in a various of ways, and willing to be able to try new ways in order to accommodate with the business and customer's goals and intentions in mind.</p>
+                      <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4><em class="fa fa-fw fa-clock-o"></em> Work on a Timely Pace</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>With having a low volume due to taking in a very small amount of websites/projects at a time, this allows me to work faster and more efficiently to provide a faster and more efficient product.</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-globe"></i> World-Wide Viewing</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Whether you are a small business or a large business, you will be able to get your product and/or services out to the entire world, not just one small area.  </p>
+                        <a href="#" class="btn btn-default">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+        <!-- /.row -->
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+        <!-- Portfolio Section -->
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-              <h2>About ME</h2>
-              <p>I am a 17-year-old kid who wants to learn and make a career out of programming.</p>
-              <p>Although I don't have much of a background, or many projects, I am still working on plenty of projects.</p>
-              <p>Currently, my two projects are making a <a href="http://www.pacificsno.com">website</a> for a company, and I am in current development of a <a href="http://twitch.tv/cakeraider">Twitch</a> IRC chat bot, which was made from scratch.</p>
+            <div class="col-lg-12">
+                <h2 class="page-header">Website Examples</h2>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item-pacificsno.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://i.imgur.com/zRcruHB.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
             </div>
         </div>
-    </section>
+        <!-- /.row -->
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center"> </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+        <!-- Features Section -->
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-              <h2>Contact ME</h2>
-              <p>Feel free to email me for questions you may have, or if you are looking for a website design as I may be able to help.</p>
-              <p><a href="mailto:jasonshadle50@gmail.com">jason.shadle50@gmail.com</a> </p>
-              <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/akajasonshadle" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                  
-              </ul>
+            <div class="col-lg-12">
+              <h2 class="page-header">Features</h2>
+            </div>
+            <div class="col-md-6">
+                <p>Possible features that you can include in your website are:</p>
+                <ul>
+                    <li>Custom Domains</li>
+                    <li>Business Emails, Including Google Apps </li>
+                    <li>Business Newsletters</li>
+                    <li>See Website Hits and Info with Google Analytics</li>
+                    <li>Forms and Polls To Get User Input</li>
+                    <li>... And Much More!</li>
+                </ul>
+                <p>There are plenty more options and available features to add into your website, those are just to name a few. If something isn't on there that you would like to see or add, I will do whatever is in my power and ability to meet or exceed that desire.</p>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
             </div>
         </div>
-    </section>
+        <!-- /.row -->
 
-    <!-- Map Section -->
-    
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Jason Shadle 2015</p>
-        </div>
-    </footer>
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Jason Shadle 2015</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -138,14 +293,12 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
 
 </body>
 
