@@ -63,7 +63,7 @@
 
         // Add icons to each block
         $this.find('.vtimeline-point').each(function() {
-            $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
+            $(this).prepend('<div class="vtimeline-icon"><i class="fas fa-map-marker-alt"></i></div>');
         });
 
         // Add dates to the timeline if exists
@@ -94,4 +94,8 @@
         });
     });
 
+    $('#toggleDarkLight').click(function() {
+        $('body, header, #about, #education, #projects, #skills, .background-alt, .heading').toggleClass('dark');
+        $('#toggleDarkLight i').toggleClass('fa-moon fa-sun');
+    });
 })(jQuery);
