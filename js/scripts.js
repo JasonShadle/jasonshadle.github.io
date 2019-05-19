@@ -94,6 +94,7 @@
         });
     });
 
+    // Dark theme
     $('#toggleDarkLight').click(function() {
         $('body, header, #about, #education, #projects, #skills, .background-alt, .heading').toggleClass('dark');
         $('#toggleDarkLight i').toggleClass('fa-moon fa-sun');
