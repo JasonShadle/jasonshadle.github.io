@@ -1,0 +1,55 @@
+.navbar {
+    background-color: @purple-light;
+    display: block;
+    color: white;
+
+    a {
+        color: white;
+    }
+
+    @media @desktop-all {
+        .nav-link {
+            float: right;
+        }
+
+        .nav-logo-div {
+            float: left !important;
+        }
+
+        .nav-link-div {
+            display: flex;
+            align-items: center;
+            float: right !important; 
+            li {
+                height: 100%;
+                a {
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+
+.navbar-logo {
+    width: 75px;
+    height: 75px;
+    float:left;
+}
+
+.nav-contents {
+    min-width: 70%;
+    margin: auto;
+}
+
+.navbar-nav {
+    min-width: 70vw;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:white;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "visionair",
+  "version": "1.0.0",
+  "description": "Medical web application that provides a design interface for physicians to create patient-specific silicon airway stents",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonShadle/visionair.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasonShadle/visionair/issues"
+  },
+  "homepage": "https://github.com/JasonShadle/visionair#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^4.0.1"
+  }
+}
