@@ -9246,7 +9246,7 @@ a.text-dark:focus {
 .stents-info-block .stents-grid img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 300px;
   margin: auto;
   object-fit: contain;
   max-height: 300px;
@@ -9264,6 +9264,10 @@ a.text-dark:focus {
 .stents-info-block .stents-grid p {
   text-align: center;
   padding-top: 20px;
+}
+.stents-info-block .stents-grid .card {
+  border: none;
+  display: flex;
 }
 .mission-block {
   width: 50%;
@@ -9373,6 +9377,43 @@ a.text-dark:focus {
 .contact-block .contact-text .list-group-item {
   padding-top: 3px;
   padding-bottom: 3px;
+}
+.xray-block {
+  position: relative;
+  padding: 0;
+}
+.xray-block #xray-img {
+  width: 100%;
+}
+.xray-block .xray-content-left {
+  color: white;
+  position: absolute;
+  top: 0;
+  width: 20%;
+  left: 10%;
+  height: 100%;
+}
+.xray-block .xray-content-left .logo {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.xray-block .xray-content-left .logo h2 {
+  color: white;
+  padding-top: 15px;
+}
+.xray-block .xray-content-left .logo #xray-logo-tagline {
+  padding-top: 10px;
+  width: 70%;
+  margin: auto;
+}
+.xray-block .xray-content-left #angulation {
+  position: absolute;
+  top: 36%;
+}
+.xray-block .xray-content-left #diameter {
+  position: absolute;
+  top: 50%;
 }
 footer {
   padding-top: 20px;

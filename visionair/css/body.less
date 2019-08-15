@@ -56,7 +56,7 @@
         img {
             display: block;
             width: 100%;
-            height: 100%;
+            height: 300px;
             margin: auto;
             object-fit: contain;
             max-height: 300px;
@@ -76,6 +76,11 @@
         p {
             text-align:center;
             padding-top: 20px;
+        }
+
+        .card {
+            border: none;
+            display: flex;
         }
     }
 }
@@ -203,4 +208,48 @@
             padding-bottom: 3px;
         }
     }  
+}
+
+.xray-block {
+    position: relative;
+    padding: 0;
+
+    #xray-img {
+        width: 100%;
+    }
+
+    .xray-content-left {
+        color: white;
+        position: absolute;
+        top: 0;
+        width: 20%;
+        left: 10%;
+        height: 100%;
+        .logo {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            h2 {
+                color: white;
+                padding-top: 15px;
+            }
+
+            #xray-logo-tagline {
+                padding-top: 10px;
+                width: 70%;
+                margin: auto;
+            }
+        }
+
+        #angulation {
+            position: absolute;
+            top: 36%;
+        }
+
+        #diameter {
+            position: absolute;
+            top: 50%;
+        }
+        
+    }
 }
