@@ -2,7 +2,7 @@
     background-color: @purple-light;
     display: block;
     color: white;
-
+    padding: none;
     a {
         color: white;
     }
@@ -26,6 +26,12 @@
                     text-transform: capitalize;
                 }
             }
+        }
+    }
+
+    @media @mobile {
+        .navbar-logo {
+            display: none;
         }
     }
 }
