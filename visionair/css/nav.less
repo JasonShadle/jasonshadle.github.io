@@ -5,6 +5,14 @@
     padding: none;
     a {
         color: white;
+        
+        @media @tablet {
+            text-align: center;
+        }
+
+        @media @mobile {
+            text-align: center;
+        }
     }
 
     @media @desktop-all {
@@ -30,6 +38,12 @@
     }
 
     @media @mobile {
+        .navbar-logo {
+            display: none;
+        }
+    }
+
+    @media @tablet {
         .navbar-logo {
             display: none;
         }
