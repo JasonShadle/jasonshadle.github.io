@@ -214,6 +214,10 @@
             @media @mobile {
                 padding-top: 15px;
             }
+
+            @media @tablet {
+                padding-top: 15px;
+            }
         }
 
         li {
@@ -225,9 +229,15 @@
             @media @desktop-all {
                 &:first-child {
                     border-left: none;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
                 }
                 &:last-child {
                     border-right: none;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    border-bottom-left-radius: 0;
                 }
             }
 
@@ -253,7 +263,17 @@
 
             @media @mobile {
                 flex-direction: column;
-                
+                border: none;
+            }
+
+            @media @tablet {
+                border: none;
+            }
+        }
+
+        .list-group {
+            @media @desktop-all {
+                flex-direction: row;
             }
         }
     }  

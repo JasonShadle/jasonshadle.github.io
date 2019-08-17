@@ -9420,6 +9420,11 @@ a.text-dark:focus {
     padding-top: 15px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-block .contact-text p {
+    padding-top: 15px;
+  }
+}
 .contact-block .contact-text li {
   background: transparent;
   border-top: none;
@@ -9429,9 +9434,15 @@ a.text-dark:focus {
 @media screen and (min-width: 992px) {
   .contact-block .contact-text li:first-child {
     border-left: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
   .contact-block .contact-text li:last-child {
     border-right: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -9456,6 +9467,17 @@ a.text-dark:focus {
 @media screen and (max-width: 767px) {
   .contact-block .contact-text .list-group-item {
     flex-direction: column;
+    border: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-block .contact-text .list-group-item {
+    border: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact-block .contact-text .list-group {
+    flex-direction: row;
   }
 }
 .xray-block {
