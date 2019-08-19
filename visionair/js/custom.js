@@ -1,0 +1,27 @@
+var wasMobile = false;
+
+// Rearrange the Stent grid items for tablet/mobile
+function moveGrid() {
+    if ($(window).innerWidth() < 992 && !wasMobile) {
+        $('#grid4').detach().insertAfter('#grid1');
+        $('#grid7').detach().insertAfter('#grid4');
+        $('#grid2').detach().insertAfter('#grid7');
+        $('#grid5').detach().insertAfter('#grid2');
+        $('#grid8').detach().insertAfter('#grid5');
+        $('#grid3').detach().insertAfter('#grid8');
+        $('#grid6').detach().insertAfter('#grid3');
+        wasMobile = true;
+    } else if ($(window).innerWidth() >= 992 && wasMobile) {
+        $('#grid2').detach().insertAfter('#grid1');
+        $('#grid3').detach().insertAfter('#grid2');
+        $('#grid4').detach().insertAfter('#grid3');
+        $('#grid5').detach().insertAfter('#grid4');
+        $('#grid6').detach().insertAfter('#grid5');
+        $('#grid7').detach().insertAfter('#grid6');
+        $('#grid8').detach().insertAfter('#grid7');
+        wasMobile = false;
+    }
+}
+
+$(window).on('resize', moveGrid);
+moveGrid();

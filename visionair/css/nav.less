@@ -2,9 +2,17 @@
     background-color: @purple-light;
     display: block;
     color: white;
-
+    padding: none;
     a {
         color: white;
+        
+        @media @tablet {
+            text-align: center;
+        }
+
+        @media @mobile {
+            text-align: center;
+        }
     }
 
     @media @desktop-all {
@@ -26,6 +34,18 @@
                     text-transform: capitalize;
                 }
             }
+        }
+    }
+
+    @media @mobile {
+        .navbar-logo {
+            display: none;
+        }
+    }
+
+    @media @tablet {
+        .navbar-logo {
+            display: none;
         }
     }
 }

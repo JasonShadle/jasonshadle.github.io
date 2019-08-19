@@ -29,6 +29,10 @@
     .overview-content {
         width: 50%;
         margin: auto;
+
+        @media @mobile {
+            width: 100%;
+        }
     }
     
     .overview-text {
@@ -76,17 +80,18 @@
         p {
             text-align:center;
             padding-top: 20px;
+
+            @media @tablet {
+                padding-bottom: 25px;
+            }
         }
 
-        .card {
-            border: none;
-            display: flex;
-        }
     }
 }
 
 .mission-block {
-    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: auto;
     text-align: center;
     h2 {
@@ -97,14 +102,23 @@
 
     img {
         padding-top: 20px;
+        padding-bottom: 20px;
         display: block;
         width: 150px;
         margin: auto;
     }
+
+    p {
+        margin: auto;
+        width: 50%;
+        @media @mobile {
+            width: 100%;
+        }
+    }
 }
 
 .contact-block {
-    background-image: url("media/grid-1.png");
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("media/grid-1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,6 +130,9 @@
         margin: auto;
         padding-top: 20px;
         text-align: center;
+        @media @mobile {
+            width: 100%;
+        }
     }
 
     h2 {
@@ -127,15 +144,16 @@
     }
 
     input {
-        // padding-right: 60px;
-        // margin-left: 10px;
-        // margin-right: 10px;
         width: 100%;
         border-radius: 5px;
         padding-top: 10px;
         padding-bottom: 10px;
         border: none;
         text-indent: 10px;
+
+        @media @mobile {
+            margin-bottom: 10px;
+        }
     }
 
     textarea {
@@ -147,6 +165,10 @@
         padding-top: 15px;
         padding-left: 10px;
         padding-right: 10px;
+
+        @media @mobile {
+            margin-top: 0;
+        }
     }
 
     button {
@@ -188,6 +210,14 @@
             display: flex;
             float: left;
             margin-bottom: 0;
+
+            @media @mobile {
+                padding-top: 15px;
+            }
+
+            @media @tablet {
+                padding-top: 15px;
+            }
         }
 
         li {
@@ -195,17 +225,56 @@
             border-top: none;
             border-bottom: none;
             border-color: @blue-light;
-            &:first-child {
-                border-left: none;
+
+            @media @desktop-all {
+                &:first-child {
+                    border-left: none;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                }
+                &:last-child {
+                    border-right: none;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
             }
-            &:last-child {
-                border-right: none;
+
+            @media @tablet {
+                &:first-child {
+                    border-left: none;
+                }
+                &:last-child {
+                    border-right: none;
+                }
+            }
+
+            @media @mobile {
+                border: none;
             }
         }
 
         .list-group-item {
             padding-top: 3px;
             padding-bottom: 3px;
+            -ms-flex-direction: row;
+            flex-direction: row;
+
+            @media @mobile {
+                flex-direction: column;
+                border: none;
+            }
+
+            @media @tablet {
+                border: none;
+            }
+        }
+
+        .list-group {
+            @media @desktop-all {
+                flex-direction: row;
+            }
         }
     }  
 }
@@ -229,11 +298,10 @@
             position: relative;
             width: 100%;
             text-align: center;
-            h2 {
-                color: white;
-                padding-top: 15px;
-            }
 
+            #xray-logo {
+                width: 100%;
+            }
             #xray-logo-tagline {
                 padding-top: 10px;
                 width: 70%;
@@ -243,13 +311,60 @@
 
         #angulation {
             position: absolute;
-            top: 36%;
+            top: 37%;
+            width: 100%;
+
+            hr {
+                background-color: white;
+                top: 50%;
+                right: 0;
+                transform: translate(121%, -30px);
+                width: 24vw;
+                margin-left: -9vw;
+            }
+
+            div {
+                border-bottom: 1px solid white;
+                transform: translate(121%, -30px);
+                display: block;
+                width: 24vw;
+                margin-left: -9vw;
+            }
         }
 
         #diameter {
             position: absolute;
             top: 50%;
+            width: 100%;
+
+            hr {
+                background-color: white;
+                top: 50%;
+                right: 0;
+                transform: translate(101%, -30px);
+                width: 109%;
+            }
+
+            div {
+                border-bottom: 1px solid white;
+                transform: translate(101%, -30px);
+                display: block;
+            }
         }
-        
+    }
+
+    .xray-content-right {
+        top: 0;
+        right: 10%;
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        color: white;
+
+        #bifurcated {
+            position: absolute;
+            top: 64%;
+
+        }
     }
 }

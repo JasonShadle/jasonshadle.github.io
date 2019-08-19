@@ -9153,9 +9153,20 @@ a.text-dark:focus {
   background-color: #894FC6;
   display: block;
   color: white;
+  padding: none;
 }
 .navbar a {
   color: white;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar a {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar a {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 992px) {
   .navbar .nav-link {
@@ -9174,6 +9185,16 @@ a.text-dark:focus {
   }
   .navbar .nav-link-div li a {
     text-transform: capitalize;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .navbar-logo {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar .navbar-logo {
+    display: none;
   }
 }
 .navbar-logo {
@@ -9226,6 +9247,11 @@ a.text-dark:focus {
   width: 50%;
   margin: auto;
 }
+@media screen and (max-width: 767px) {
+  .overview-block .overview-content {
+    width: 100%;
+  }
+}
 .overview-block .overview-text {
   padding-top: 35px;
   text-align: center;
@@ -9265,12 +9291,14 @@ a.text-dark:focus {
   text-align: center;
   padding-top: 20px;
 }
-.stents-info-block .stents-grid .card {
-  border: none;
-  display: flex;
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .stents-info-block .stents-grid p {
+    padding-bottom: 25px;
+  }
 }
 .mission-block {
-  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin: auto;
   text-align: center;
 }
@@ -9281,12 +9309,22 @@ a.text-dark:focus {
 }
 .mission-block img {
   padding-top: 20px;
+  padding-bottom: 20px;
   display: block;
   width: 150px;
   margin: auto;
 }
+.mission-block p {
+  margin: auto;
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .mission-block p {
+    width: 100%;
+  }
+}
 .contact-block {
-  background-image: url("media/grid-1.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/grid-1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9298,6 +9336,11 @@ a.text-dark:focus {
   margin: auto;
   padding-top: 20px;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .contact-block .contact-form {
+    width: 100%;
+  }
 }
 .contact-block h2 {
   padding-top: 20px;
@@ -9314,6 +9357,11 @@ a.text-dark:focus {
   border: none;
   text-indent: 10px;
 }
+@media screen and (max-width: 767px) {
+  .contact-block input {
+    margin-bottom: 10px;
+  }
+}
 .contact-block textarea {
   margin-top: 20px;
   width: 100%;
@@ -9323,6 +9371,11 @@ a.text-dark:focus {
   padding-top: 15px;
   padding-left: 10px;
   padding-right: 10px;
+}
+@media screen and (max-width: 767px) {
+  .contact-block textarea {
+    margin-top: 0;
+  }
 }
 .contact-block button {
   margin-top: 15px;
@@ -9362,21 +9415,70 @@ a.text-dark:focus {
   float: left;
   margin-bottom: 0;
 }
+@media screen and (max-width: 767px) {
+  .contact-block .contact-text p {
+    padding-top: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-block .contact-text p {
+    padding-top: 15px;
+  }
+}
 .contact-block .contact-text li {
   background: transparent;
   border-top: none;
   border-bottom: none;
   border-color: #EBF1FF;
 }
-.contact-block .contact-text li:first-child {
-  border-left: none;
+@media screen and (min-width: 992px) {
+  .contact-block .contact-text li:first-child {
+    border-left: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .contact-block .contact-text li:last-child {
+    border-right: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
-.contact-block .contact-text li:last-child {
-  border-right: none;
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-block .contact-text li:first-child {
+    border-left: none;
+  }
+  .contact-block .contact-text li:last-child {
+    border-right: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-block .contact-text li {
+    border: none;
+  }
 }
 .contact-block .contact-text .list-group-item {
   padding-top: 3px;
   padding-bottom: 3px;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+@media screen and (max-width: 767px) {
+  .contact-block .contact-text .list-group-item {
+    flex-direction: column;
+    border: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-block .contact-text .list-group-item {
+    border: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact-block .contact-text .list-group {
+    flex-direction: row;
+  }
 }
 .xray-block {
   position: relative;
@@ -9398,9 +9500,8 @@ a.text-dark:focus {
   width: 100%;
   text-align: center;
 }
-.xray-block .xray-content-left .logo h2 {
-  color: white;
-  padding-top: 15px;
+.xray-block .xray-content-left .logo #xray-logo {
+  width: 100%;
 }
 .xray-block .xray-content-left .logo #xray-logo-tagline {
   padding-top: 10px;
@@ -9409,11 +9510,52 @@ a.text-dark:focus {
 }
 .xray-block .xray-content-left #angulation {
   position: absolute;
-  top: 36%;
+  top: 37%;
+  width: 100%;
+}
+.xray-block .xray-content-left #angulation hr {
+  background-color: white;
+  top: 50%;
+  right: 0;
+  transform: translate(121%, -30px);
+  width: 24vw;
+  margin-left: -9vw;
+}
+.xray-block .xray-content-left #angulation div {
+  border-bottom: 1px solid white;
+  transform: translate(121%, -30px);
+  display: block;
+  width: 24vw;
+  margin-left: -9vw;
 }
 .xray-block .xray-content-left #diameter {
   position: absolute;
   top: 50%;
+  width: 100%;
+}
+.xray-block .xray-content-left #diameter hr {
+  background-color: white;
+  top: 50%;
+  right: 0;
+  transform: translate(101%, -30px);
+  width: 109%;
+}
+.xray-block .xray-content-left #diameter div {
+  border-bottom: 1px solid white;
+  transform: translate(101%, -30px);
+  display: block;
+}
+.xray-block .xray-content-right {
+  top: 0;
+  right: 10%;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  color: white;
+}
+.xray-block .xray-content-right #bifurcated {
+  position: absolute;
+  top: 64%;
 }
 footer {
   padding-top: 20px;
@@ -9424,10 +9566,9 @@ footer {
 footer img {
   display: block;
   max-width: 150px;
-  height: 100%;
   margin: auto;
 }
-footer h3 {
+footer h4 {
   padding-top: 15px;
   text-align: center;
   margin: auto;
