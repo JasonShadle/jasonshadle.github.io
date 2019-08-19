@@ -9400,7 +9400,6 @@ a.text-dark:focus {
   justify-content: center;
   margin: auto;
   padding-top: 20px;
-  overflow-y: auto;
 }
 .contact-block .contact-text a {
   display: flex;
