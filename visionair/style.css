@@ -10,6 +10,9 @@ html p {
 .bolder {
   font-weight: 900;
 }
+.whitecolor {
+  color: white;
+}
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -9153,7 +9156,7 @@ a.text-dark:focus {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 .navbar {
-  background-color: #894FC6;
+  background-color: #6a5bb4;
   display: block;
   color: white;
   padding: none;
@@ -9176,6 +9179,8 @@ a.text-dark:focus {
 @media screen and (min-width: 992px) {
   .navbar .nav-link {
     float: right;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .navbar .nav-logo-div {
     float: left !important;
@@ -9245,7 +9250,7 @@ a.text-dark:focus {
   }
 }
 .overview-block .overview-logo {
-  width: 60%;
+  width: 80%;
   display: block;
   margin: auto;
 }
@@ -9269,6 +9274,10 @@ a.text-dark:focus {
   display: block;
   margin: auto;
   width: 50%;
+}
+.stents-info-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .stents-info-block #stents {
   margin-top: 20px;
@@ -9395,7 +9404,7 @@ a.text-dark:focus {
   margin-top: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background: #894FC6;
+  background: #6a5bb4;
   border: none;
   color: white;
   border-radius: 5px;
@@ -9507,6 +9516,23 @@ a.text-dark:focus {
     display: flex;
   }
 }
+.xray-block .logo {
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: 10%;
+  width: 30%;
+  text-align: center;
+  margin: auto;
+}
+.xray-block .logo #xray-logo {
+  width: 100%;
+}
+.xray-block .logo #xray-logo-tagline {
+  padding-top: 3px;
+  width: 70%;
+  margin: auto;
+}
 .xray-block .xray-content-left {
   color: white;
   position: absolute;
@@ -9563,7 +9589,7 @@ a.text-dark:focus {
 }
 @media only screen and (max-width: 450px) {
   .xray-block .xray-content-left #angulation {
-    top: 10%;
+    top: 20%;
   }
 }
 .xray-block .xray-content-left #diameter {
@@ -9622,19 +9648,6 @@ a.text-dark:focus {
   position: absolute;
   color: white;
 }
-.xray-block .xray-content-right .logo {
-  position: relative;
-  width: 100%;
-  text-align: center;
-}
-.xray-block .xray-content-right .logo #xray-logo {
-  width: 100%;
-}
-.xray-block .xray-content-right .logo #xray-logo-tagline {
-  padding-top: 3px;
-  width: 70%;
-  margin: auto;
-}
 .xray-block .xray-content-right #bifurcated {
   position: absolute;
   top: 64%;
@@ -9673,7 +9686,7 @@ a.text-dark:focus {
 footer {
   padding-top: 20px;
   padding-bottom: 20px;
-  background: #894FC6;
+  background: #6a5bb4;
   color: white;
 }
 footer img {
@@ -9685,4 +9698,10 @@ footer h4 {
   padding-top: 15px;
   text-align: center;
   margin: auto;
+}
+footer #footer-stent {
+  margin: auto;
+  max-width: 115px;
+  display: block;
+  padding-top: 5px;
 }

@@ -12,7 +12,7 @@
     }
     
     .overview-logo {
-        width: 60%;
+        width: 80%;
         display: block;
         margin: auto;
     }
@@ -43,6 +43,8 @@
 }
 
 .stents-info-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
     #stents {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -176,7 +178,7 @@
         margin-top: 15px;
         padding-top: 10px;
         padding-bottom: 10px;
-        background: @purple-light;
+        background: @purple-darker;
         border: none;
         color: white;
         border-radius: 5px;
@@ -292,6 +294,41 @@
         filter: brightness(59%);
     }
 
+    // .logo {
+    //     position: relative;
+    //     width: 100%;
+    //     text-align: center;
+
+    //     #xray-logo {
+    //         width: 100%;
+    //     }
+        
+    //     #xray-logo-tagline {
+    //         padding-top: 3px;
+    //         width: 70%;
+    //         margin: auto;
+    //     }
+    // }
+
+    .logo {
+        position: absolute;
+        display: block;
+        top: 10px;
+        left: 10%;
+        width: 30%;
+        text-align: center;
+        margin: auto;
+        #xray-logo {
+            width: 100%;
+        }
+        
+        #xray-logo-tagline {
+            padding-top: 3px;
+            width: 70%;
+            margin: auto;
+        }
+    }
+
     .xray-content-left {
         color: white;
         position: absolute;
@@ -326,6 +363,7 @@
                 transform: translate(121%, -120px);
             }
 
+            //angulation media
             @media only screen and (min-width: 1995px) {
                 div {
                     width: 24vw;
@@ -367,7 +405,7 @@
             }
 
             @media only screen and (max-width: 450px) {
-                top: 10%;
+                top: 20%;
             }
         }
 
@@ -382,6 +420,7 @@
                 display: block;
             }
 
+            // diameter angulation
             @media only screen and (min-width: 1400px) {
                 div {
                     transform: translate(101%, -30px);
@@ -405,6 +444,7 @@
             }
         }
 
+        //content-left media
         @media only screen and (min-width: 1074px) {
             width: 20%;
             left: 10%;
@@ -429,22 +469,6 @@
         position: absolute;
         color: white;
 
-        .logo {
-            position: relative;
-            width: 100%;
-            text-align: center;
-
-            #xray-logo {
-                width: 100%;
-            }
-            
-            #xray-logo-tagline {
-                padding-top: 3px;
-                width: 70%;
-                margin: auto;
-            }
-        }
-
         #bifurcated {
             position: absolute;
             top: 64%;
@@ -458,6 +482,8 @@
 
                 
             }
+
+            //bifurcated media
 
             @media only screen and (min-width: 1510px) {
                 div {
@@ -481,6 +507,7 @@
         }
     }
 
+    //xray block media
     @media @mobile {
         height: 85vh;
         display: flex;
