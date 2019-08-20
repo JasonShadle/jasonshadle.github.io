@@ -4,22 +4,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 
     @media @desktop-all {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
-    .overview-mainlogo {
-        width: 150px;
-        height: 150px;
-        display: flex;
-        margin: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
     
     .overview-logo {
-        width: 100%;
-        padding-top: 15px;
+        width: 60%;
+        display: block;
+        margin: auto;
     }
     
     .overview-logo-div {
@@ -38,6 +33,12 @@
     .overview-text {
         padding-top: 35px;
         text-align: center;
+    }
+
+    #overview-stent {
+        display: block;
+        margin: auto;
+        width: 50%;
     }
 }
 
@@ -135,10 +136,10 @@
         }
     }
 
-    h2 {
+    h1 {
         padding-top: 20px;
         color: white;
-        font-weight: bold;
+        font-weight: 900;
         text-align: center;
         margin: auto;
     }
@@ -284,6 +285,11 @@
 
     #xray-img {
         width: 100%;
+        @media @mobile {
+            object-fit: cover;
+            display: flex;
+        }
+        filter: brightness(59%);
     }
 
     .xray-content-left {
@@ -291,43 +297,77 @@
         position: absolute;
         top: 0;
         width: 20%;
-        left: 10%;
+        left: 7%;
         height: 100%;
-        .logo {
-            position: relative;
-            width: 100%;
-            text-align: center;
+        // .logo {
+        //     position: relative;
+        //     width: 100%;
+        //     text-align: center;
 
-            #xray-logo {
-                width: 100%;
-            }
-            #xray-logo-tagline {
-                padding-top: 10px;
-                width: 70%;
-                margin: auto;
-            }
-        }
+        //     #xray-logo {
+        //         width: 100%;
+        //     }
+        //     #xray-logo-tagline {
+        //         padding-top: 3px;
+        //         width: 70%;
+        //         margin: auto;
+        //     }
+        // }
 
         #angulation {
             position: absolute;
             top: 37%;
             width: 100%;
 
-            hr {
-                background-color: white;
-                top: 50%;
-                right: 0;
-                transform: translate(121%, -30px);
-                width: 24vw;
-                margin-left: -9vw;
-            }
-
             div {
                 border-bottom: 1px solid white;
-                transform: translate(121%, -30px);
                 display: block;
-                width: 24vw;
-                margin-left: -9vw;
+
+                transform: translate(121%, -120px);
+            }
+
+            @media only screen and (min-width: 1995px) {
+                div {
+                    width: 24vw;
+                    margin-left: -9vw;
+                    transform: translate(121%, -30px);
+                }
+                
+            }
+            
+            @media only screen and (min-width: 1380px)  and (max-width: 1994px) {
+                div {
+                    width: 24vw;
+                    margin-left: -9vw;
+                    transform: translate(121%, -60px);
+                }
+                
+            }
+
+            @media only screen and (min-width: 1075px) and (max-width: 1379px) {
+                div {
+                    top: 28%;
+                    transform: translate(121%, -90px);
+                }
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1074px) {
+                top: 28%;
+                div {
+                    border-bottom: none;
+                }  
+            }
+
+            @media @mobile {
+                top: 33%;
+                div {
+                    
+                    border-bottom: none;
+                }
+            }
+
+            @media only screen and (max-width: 450px) {
+                top: 10%;
             }
         }
 
@@ -336,19 +376,48 @@
             top: 50%;
             width: 100%;
 
-            hr {
-                background-color: white;
-                top: 50%;
-                right: 0;
-                transform: translate(101%, -30px);
-                width: 109%;
-            }
-
             div {
                 border-bottom: 1px solid white;
-                transform: translate(101%, -30px);
+                transform: translate(101%, -90px);
                 display: block;
             }
+
+            @media only screen and (min-width: 1400px) {
+                div {
+                    transform: translate(101%, -30px);
+                }
+            }
+
+            @media only screen and (min-width: 1075px) and (max-width: 1399px) {
+                div {
+                    transform: translate(101%, -60px);
+                }
+            }
+
+            @media only screen and (max-width: 1074px) {
+                div {
+                    border-bottom: none;
+                }
+            }
+
+            @media @mobile {
+                top: 54%;
+            }
+        }
+
+        @media only screen and (min-width: 1074px) {
+            width: 20%;
+            left: 10%;
+        } 
+
+        @media only screen and (min-width: 768px) and (max-width: 1073px) {
+            width: 35%;
+            left: 3%;
+        }
+
+        @media @mobile {
+            width: 38%;
+            left: 2%;
         }
     }
 
@@ -360,10 +429,60 @@
         position: absolute;
         color: white;
 
+        .logo {
+            position: relative;
+            width: 100%;
+            text-align: center;
+
+            #xray-logo {
+                width: 100%;
+            }
+            
+            #xray-logo-tagline {
+                padding-top: 3px;
+                width: 70%;
+                margin: auto;
+            }
+        }
+
         #bifurcated {
             position: absolute;
             top: 64%;
 
+            div {
+                border-bottom: 1px solid white;
+                display: block;
+                margin-left: -3vw;
+                width: 19vw;
+                transform: translate(-100%, -60px);
+
+                
+            }
+
+            @media only screen and (min-width: 1510px) {
+                div {
+                    transform: translate(-100%, -30px);
+                }
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1074px) {
+                div {
+                    border-bottom: none;
+                }
+            }
+            @media @mobile {
+                top: 49%;
+                div {
+                    border-bottom: none;
+                }
+                
+
+            }
         }
+    }
+
+    @media @mobile {
+        height: 85vh;
+        display: flex;
     }
 }

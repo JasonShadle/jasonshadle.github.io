@@ -29,11 +29,11 @@
                   <a class="nav-link" href="#">HOME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">ABOUT</a>
+                  <a class="nav-link" href="#about">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
-                  </li>
+                  <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
               </div>
             </ul>
           </div>
@@ -44,18 +44,21 @@
       <div class="container-fluid overview-block">
         <div class="overview-content">
           <div class="overview-logo-div">
-            <img class="overview-mainlogo" src="media/logo-badge.png" alt="Standalone logo">
-            <img class="overview-logo" src="media/logo-visionAirNoLogo.png" alt="VisionAir Solutions text">
+            <!-- <img class="overview-mainlogo" src="media/logo-badge.png" alt="Standalone logo">
+            <img class="overview-logo" src="media/logo-visionAirNoLogo.png" alt="VisionAir Solutions text"> -->
+            <img class="overview-logo" src="media/logo-xray.png" alt="VisionAir 3D Logo">
+            <img id= "overview-stent" src="media/stent-text.png" alt="Stent Architect text">
           </div>
           <div class="overview-text">
-            <p class="size20">The <strong>3D Stent Architect</strong> is a medical web application that provides a design interface for physicians to <strong>create</strong> patient-specific silicon airway stents.</p>
+            <p class="size20">The <span class="bolder">3D Stent Architect</span> is a medical web application that provides a design interface for physicians to <span class="bolder">create</span> patient-specific silicon airway stents.</p>
+            <p class="size20">Pending 510k, not available for sale within the United States</p>
           </div>
         </div>
       </div>
 
       <!-- Stent Info Block -->
-      <div class="container-fluid stents-info-block">
-        <h2 id="stents">Patient-Specific Airway Stents</h2>
+      <div id="about" class="container-fluid stents-info-block">
+        <h1 id="stents" class="bolder">Patient-Specific Airway Stents</h1>
         <div class="stents-grid container-fluid d-flex align-items-stretch">
           <div class="row">
             <div id="grid1" class="col-lg-4 col-12 left-col">
@@ -79,82 +82,61 @@
             </div>
             <!-- <div class="w-100"></div> -->
             <div id="grid7" class="col-lg-4 col-12 left-col">
-              <p>3D Stents can be tailored to match <strong>any individual patient anatomy</strong>. This breakthrough eliminates the need for onsite modification: <strong>no cutting, no stitching, and no gluing</strong>.</p>
+              <p>3D Stents can be tailored to match <span class="bolder">any individual patient anatomy</span>. This breakthrough eliminates the need for onsite modification: <span class="bolder">no cutting, no stitching, and no gluing</span>.</p>
             </div>
             <div id="grid8" class="col-lg-4 col-12 mid-col">
-              <p>VisionAir 3D provides a <strong>streamlined process</strong> from CT upload to stent design. Our sphere design interface provides a tool to design stents with precision and ease.</p>
+              <p>VisionAir 3D provides a <span class="bolder">streamlined process</span> from CT upload to stent design. Our sphere design interface provides a tool to design stents with precision and ease.</p>
             </div>
             <div id="grid9" class="col-lg-4 col-12 right-col">
-              <p><strong>3D Stent Prescriptions</strong> are manufactured in medical grade silicone as one cohesive patient-specific implant.</p>
+              <p><span class="bolder">3D Stent Prescriptions</span> are manufactured in medical grade silicone as one cohesive patient-specific implant.</p>
             </div>
           </div>
-          <!-- <div class="row">
-            <div class="col-md col-12">
-              <div class="card">
-                <img class="card-img-top" src="media/grid-1.png">
-                <div class="card-body">
-                  <h3>Patient-Specific Device from CT Scan</h3>
-                  <p>3D Stents can be tailored to match <strong>any individual patient anatomy</strong>. This breakthrough eliminates the need for onsite modification: <strong>no cutting, no stitching, and no gluing</strong>.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md col-12">
-              <div class="card">
-                <img class="card-img-top" src="media/grid-2.png">
-                <div class="card-body">
-                  <h3>Software</h3>
-                  <p>VisionAir 3D provides a <strong>streamlined process</strong> from CT upload to stent design. Our sphere design interface provides a tool to design stents with precision and ease.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md col-12">
-              <div class="card">
-                <img class="card-img-top" src="media/grid-3.png">
-                <div class="card-body">
-                  <h3>Stent</h3>
-                  <p><strong>3D Stent Prescriptions</strong> are manufactured in medical grade silicone as one cohesive patient-specific implant.</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     <!-- Xray Block -->
     <div class="container-fluid xray-block">
       <img id="xray-img" src="media/xray-stent.png" alt="3D model of stent">
       <div class= "xray-content-left">
-        <div class="logo">
+        <!-- <div class="logo">
             <img id="xray-logo" src="media/logo-xray.png" alt="VisionAir 3D Logo">
-            
             <img id="xray-logo-tagline" src="media/stent-text.png" alt="Stent Architect text">
-        </div>
+        </div> -->
         <div>
           <span id="angulation">
-            <p>Control the <strong>angulation</strong> at any position to contour a stent's shape to the complexities of any airway anatomy.</p>
+            <p>Control the <span class="bolder">angulation</span> at any position to contour a stent's shape to the complexities of any airway anatomy.</p>
             <!-- <hr> -->
             <div></div>
           </span>
           <span id="diameter">
-            <p>Adjust the inner <strong>diameter of the stent</strong> at any point from 6.0mm - 18.0mm</p>
+            <p>Adjust the inner <span class="bolder">diameter of the stent</span> at any point from 6.0mm - 18.0mm</p>
             <!-- <hr> -->
             <div></div>
           </span>
         </div>
       </div>
       <div class="xray-content-right">
-        <p id="bifurcated"><strong>Bifurcated</strong> structure minimizes migration.</p>
+        <div class="logo">
+            <img id="xray-logo" src="media/logo-xray.png" alt="VisionAir 3D Logo">
+            <img id="xray-logo-tagline" src="media/stent-text.png" alt="Stent Architect text">
+        </div>
+        <span id="bifurcated">
+          <p><span class="bolder">Bifurcated</span> structure minimizes migration.</p>
+          <div></div>
+        </span>
+        
       </div>
     </div>
     <!-- Mission Block -->
     <div class="container-fluid mission-block" alt="Standalone logo">
-      <h2>Our Mission</h2>
+      <h1 class="bolder">Our Mission</h1>
       <img src="media/logo-badge.png">
-      <p>At <strong>VisionAir Solutions</strong>, we acknowledge that each patient is unique. This is why we believe that reimagining the airway stent is crucial for the future of interventional airway treatment.</p>
+      <p>At <span class="bolder">VisionAir Solutions</span>, we acknowledge that each patient is unique. This is why we believe that reimagining the airway stent is crucial for the future of interventional airway treatment.</p>
       <br>
-      <p>Our Company strives to work with leading pulmonologists to deliver the <strong>essential tools</strong> that will allow them to meet the needs of any individual.</p>
+      <p>Our Company strives to work with leading pulmonologists to deliver the <span class="bolder">essential tools</span> that will allow them to meet the needs of any individual.</p>
     </div>
-    <div class="container-fluid contact-block">
-      <h2>Contact Us</h2>
+    <!-- Contact Block -->
+    <div id="contact" class="container-fluid contact-block">
+      <h1>Contact Us</h1>
       <div class="contact-form">
         <form method="POST" action="https://formspree.io/jason.shadle50@gmail.com">
           <div class="row">

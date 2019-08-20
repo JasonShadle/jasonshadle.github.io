@@ -25,3 +25,22 @@ function moveGrid() {
 
 $(window).on('resize', moveGrid);
 moveGrid();
+
+$(document).ready(function() {
+    console.log('inside ready function');
+    $('.nav-link').on('click', function(e) {
+        console.log('inside click event');
+        if (this.hash !== "") {
+            e.preventDefault();
+            var hash = this.hash;
+            
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function() {
+                window.location.hash = hash;
+            });
+        }
+        
+    });
+
+});
