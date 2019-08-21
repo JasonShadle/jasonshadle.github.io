@@ -9234,6 +9234,8 @@ a.text-dark:focus {
 }
 .navbar-dark .navbar-nav .nav-link {
   color: white;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .overview-block {
   overflow: hidden;
