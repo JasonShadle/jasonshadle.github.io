@@ -9707,3 +9707,17 @@ footer #footer-stent {
   display: block;
   padding-top: 5px;
 }
+#to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  font-size: 30px;
+  z-index: 999;
+}
+#to-top .fa-circle {
+  color: #6a5bb4;
+}
+#to-top .fa-chevron-up {
+  color: white;
+}
